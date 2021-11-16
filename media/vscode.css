@@ -1,0 +1,77 @@
+:root {
+  --container-paddding: 20px;
+  --input-padding-vertical: 6px;
+  --input-padding-horizontal: 4px;
+  --input-margin-vertical: 4px;
+  --input-margin-horizontal: 0;
+}
+
+body {
+  padding: 0 var(--container-paddding);
+  color: var(--vscode-foreground);
+  font-size: var(--vscode-font-size);
+  font-weight: var(--vscode-font-weight);
+  font-family: var(--vscode-font-family);
+  background-color: var(--vscode-editor-background);
+}
+
+ol,
+ul {
+  padding-left: var(--container-paddding);
+}
+
+*:focus {
+  outline-color: var(--vscode-focusBorder) !important;
+}
+
+a {
+  color: var(--vscode-textLink-foreground);
+}
+
+a:hover,
+a:active {
+  color: var(--vscode-textLink-activeForeground);
+}
+
+img {
+  border-radius: 50%;
+}
+
+.tracks {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tracks li {
+  display: block;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tracks li span {
+  display: block;
+  margin-right: 5px;
+}
+
+.image {
+  width: 45px;
+  height: 45px;
+  float: left;
+  margin-right: 15px;
+}
+
+.artist {
+  font-family: system-ui, sans-serif;
+  color: lightslategrey;
+  margin-top: 2px;
+  font-size: 11px;
+}
+
+.song {
+  font-family: system-ui, sans-serif;
+  color: gainsboro;
+  font-size: 12px;
+}

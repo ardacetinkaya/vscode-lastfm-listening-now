@@ -1,0 +1,84 @@
+{
+	"name": "vscode-lastfm-listening-now",
+	"displayName": "Now listening",
+	"description": "Listening song",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.62.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:vscode-lastfm-listening-now.helloWorld",
+		"onView:vscode-lastfm-listening-now-view",
+		"onCommand:vscode-lastfm-listening-now.init"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"configuration": [
+			{
+				"title": "Last.fm",
+				"properties": {
+					"lastfm.view.username": {
+						"type": "string",
+						"description": "Last.fm username",
+						"editPresentation": "singlelineText"
+					},
+					"lastfm.view.apiKey": {
+						"type": "string",
+						"description": "Last.fm API Key",
+						"editPresentation": "singlelineText"
+					}
+				}
+			}
+		],
+		"views": {
+			"explorer": [
+				{
+					"type": "webview",
+					"id": "vscode-lastfm-listening-now-view",
+					"name": "Last.fm - Now Playing"
+				}
+			]
+		},
+		"commands": [
+			{
+				"command": "vscode-lastfm-listening-now.helloWorld",
+				"category": "Last.fm - Now Playing",
+				"title": "Hello World"
+			},
+			{
+				"command": "vscode-lastfm-listening-now.init",
+				"category": "Last.fm - Now Playing",
+				"title": "Init"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.4",
+		"@types/isomorphic-fetch": "0.0.35",
+		"@types/mocha": "^9.0.0",
+		"@types/node": "14.x",
+		"@types/vscode": "^1.62.0",
+		"@typescript-eslint/eslint-plugin": "^5.1.0",
+		"@typescript-eslint/parser": "^5.1.0",
+		"@vscode/test-electron": "^1.6.2",
+		"eslint": "^8.1.0",
+		"glob": "^7.1.7",
+		"mocha": "^9.1.3",
+		"typescript": "^4.4.4"
+	},
+	"dependencies": {
+		"axios": "^0.24.0",
+		"isomorphic-fetch": "^3.0.0"
+	}
+}
