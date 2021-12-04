@@ -2,6 +2,9 @@
 
 <img src="https://user-images.githubusercontent.com/4550197/144708315-1f4392bf-0289-4909-934e-3f3f44242336.gif" align="right" />
 
+
+[![Version](https://vsmarketplacebadge.apphb.com/version/ArdaCetinkaya.vscode-lastfm-listening-now.svg)](https://marketplace.visualstudio.com/items?itemName=ArdaCetinkaya.vscode-lastfm-listening-now&ssr=false#overview)
+
 This is a simple [Visual Studio Code(a.k.a VS Code)](https://code.visualstudio.com/) extension that displays currently playings songs within Last.fm. Sometimes while listening mixed list a catchy and good song may hit. Whitout leaving VS Code environment, it is easy to see what is currentl playing with help of [Last.fm](https://last.fm)
 
 But the main concept for this plugin is to learn how to create an extension for VS Code. Mainly some other business requierment causes me to develop an extension. Because it is not currently possible to have it as open source; I just wanted to share my learning journey within this simple extension.
