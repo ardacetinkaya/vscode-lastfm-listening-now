@@ -3,6 +3,17 @@
 	"displayName": "Now listening",
 	"description": "Displays the recent tracks that you listened or currently listening within Last.fm",
 	"version": "1.0.0",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ardacetinkaya/vscode-lastfm-listening-now"
+	},
+	"author": {
+		"name": "Arda Cetinkaya",
+		"url": "https://www.minepla.net"
+	},
+	"category": "other",
+	"publisher": "ArdaCetinkaya",
 	"engines": {
 		"vscode": "^1.62.0"
 	},
