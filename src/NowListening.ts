@@ -23,9 +23,12 @@ export class NowListeningView implements vscode.WebviewViewProvider {
   _view?: vscode.WebviewView;
   _doc?: vscode.TextDocument;
   _tracks: Track[] = [];
+  _placeholder: string = "Please set your Last.fm user name.";
 
   constructor(private readonly _extensionUri: vscode.Uri, private readonly _username:string|unknown, private readonly _apiKey:string|unknown) {
-
+    if(_username && _apiKey) {
+      this._placeholder = "";
+    }
   }
 
   public resolveWebviewView(webviewView: vscode.WebviewView) {
@@ -49,7 +52,7 @@ export class NowListeningView implements vscode.WebviewViewProvider {
       }).then(async response => {
         if (response.ok) {
           const result = await response.json();
-          
+
           //Clear array for every time
           this._tracks.length = 0;
 
@@ -89,7 +92,7 @@ export class NowListeningView implements vscode.WebviewViewProvider {
 				<link href="${styleVSCodeUri}" rel="stylesheet">
 			</head>
       <body>
-          <ul id="tracks" class="tracks">
+          <ul id="tracks" class="tracks">${this._placeholder}
           </ul>
           <script nonce="${nonce}">
             const tsvscode = acquireVsCodeApi();

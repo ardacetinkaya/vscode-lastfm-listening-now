@@ -1,7 +1,7 @@
 {
 	"name": "vscode-lastfm-listening-now",
 	"displayName": "Now listening",
-	"description": "Listening song",
+	"description": "Displays the recent tracks that you listened or currently listening within Last.fm",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.62.0"
@@ -10,7 +10,6 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:vscode-lastfm-listening-now.helloWorld",
 		"onView:vscode-lastfm-listening-now-view",
 		"onCommand:vscode-lastfm-listening-now.init"
 	],
@@ -43,11 +42,6 @@
 			]
 		},
 		"commands": [
-			{
-				"command": "vscode-lastfm-listening-now.helloWorld",
-				"category": "Last.fm - Now Playing",
-				"title": "Hello World"
-			},
 			{
 				"command": "vscode-lastfm-listening-now.init",
 				"category": "Last.fm - Now Playing",
