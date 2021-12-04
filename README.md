@@ -48,7 +48,9 @@ These settings can be set with **Init** command of the extension
 -----------------------------------------------------------------------------------------------------------
 ## Following extension guidelines
 
+I hope this repo. helps you to start your journey to create great extensions. To have more solid knowledge about VS Code extensions please also check and follow the following guidelines;
+
 * [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
 
 
-**Enjoy!**
+**Enjoy, happy coding!**
