@@ -1,14 +1,17 @@
 # Last.fm Recent Tracks **VS Code** Extension
 
+<img src="https://user-images.githubusercontent.com/4550197/144708315-1f4392bf-0289-4909-934e-3f3f44242336.gif" align="right" />
 
 ## Features
 
+- Displays currently playing song in Explorer View
+- Displays recent listened tracks in Explorer view as WebView
 
 ## Requirements
 
 - Idea about [Last.fm](https://last.fm)
     - If you are not integrating your music player(Ex: Spotify) with [Last.fm](https://last.fm) as an user, this extension won't help you for anything, then maybe just helps you to learn how to develop a better **VS Code** extension.
-    - So you need [Last.fm](https://last.fm) account and API key, [check here](https://www.last.fm/api/account/create)
+    - So you need [Last.fm](https://last.fm) account and API key, please [check here](https://www.last.fm/api/account/create)
 
 
 ## Extension Settings
