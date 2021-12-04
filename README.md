@@ -30,6 +30,9 @@ This extension has the following settings:
 * `lastfm.view.username`: username for Last.fm account
 * `lastfm.view.apiKey`: API key to access [Last.fm APIs]()
 
+These settings can be set with **Init** command of the extension
+
+![username](https://user-images.githubusercontent.com/4550197/144709191-c49d2755-6abe-4650-8956-40b1344f7cc0.gif)
 
 
 ## Known Issues
@@ -44,8 +47,6 @@ This extension has the following settings:
 
 -----------------------------------------------------------------------------------------------------------
 ## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
 
 * [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
 
