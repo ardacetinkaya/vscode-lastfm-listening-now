@@ -2,9 +2,18 @@
 
 <img src="https://user-images.githubusercontent.com/4550197/144708315-1f4392bf-0289-4909-934e-3f3f44242336.gif" align="right" />
 
+This is a simple [Visual Studio Code(a.k.a VS Code)](https://code.visualstudio.com/) extension that displays currently playings songs within Last.fm. Sometimes while listening mixed list a catchy and good song may hit. Whitout leaving VS Code environment, it is easy to see what is currentl playing with help of [Last.fm](https://last.fm)
+
+But the main concept for this plugin is to learn how to create an extension for VS Code. Mainly some other business requierment causes me to develop an extension. Because it is not currently possible to have it as open source; I just wanted to share my learning journey within this simple extension.
+
+- Also check these resources to deep dive into VS Code Extension development
+    - https://code.visualstudio.com/api/get-started/your-first-extension
+    - https://code.visualstudio.com/api/extension-guides/webview
+    - https://github.com/microsoft/vscode-extension-samples
+
 ## Features
 
-- Displays currently playing song in Explorer View
+- Displays currently playing song in Explorer view
 - Displays recent listened tracks in Explorer view as WebView
 
 ## Requirements
@@ -16,14 +25,12 @@
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+This extension has the following settings:
 
-For example:
+* `lastfm.view.username`: username for Last.fm account
+* `lastfm.view.apiKey`: API key to access [Last.fm APIs]()
 
-This extension contributes the following settings:
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
 
 ## Known Issues
 
