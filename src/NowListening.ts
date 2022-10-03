@@ -79,7 +79,7 @@ export class NowListeningView implements vscode.WebviewViewProvider {
 			let test = 0;
 
 			for (const t of data.recenttracks.track) {
-				let url = `https://ws.audioscrobbler.com/2.0/?method=track.getInfo&artist=${t.artist["#text"]}&track=${t.name}&autocorrect=1&api_key=d54e96c2d8ebe046577ca45e6e28500f&format=json`;
+				let url = `https://ws.audioscrobbler.com/2.0/?method=track.getInfo&artist=${t.artist["#text"]}&track=${t.name}&autocorrect=1&api_key=${self._apiKey}&format=json`;
 				const result = await fetch(url);
 				let response = await result.json();
 				console.log(response);
